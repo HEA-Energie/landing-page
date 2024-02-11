@@ -15,14 +15,12 @@ const Index = () => (
     <section className="pt-20 md:pt-40">
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
-            HEA Energie
-          </h1>
+          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">HEA Energie</h1>
           <p className="text-xl lg:text-2xl mt-6 font-light">
-          Effiziente Abrechnungslösungen für die digitale Ära: Einfach. Schnell. Zuverlässig.
+            Effiziente Abrechnungslösungen für die digitale Ära: Einfach. Schnell. Zuverlässig.
           </p>
           <p className="mt-8 md:mt-12">
-            <Button size="lg">Get Started</Button>
+            <Button size="lg">Hosted by Az</Button>
           </p>
           <p className="mt-4 text-gray-600">Sed fermentum felis ut cursu</p>
         </div>
@@ -127,7 +125,7 @@ const Index = () => (
       <div className="container mx-auto">
         <LabelText className="mb-8 text-gray-600 text-center">What customers are saying</LabelText>
         <div className="flex flex-col md:flex-row md:-mx-3">
-          {customerData.map(customer => (
+          {customerData.map((customer) => (
             <div key={customer.customerName} className="flex-1 px-3">
               <CustomerCard customer={customer} />
             </div>
