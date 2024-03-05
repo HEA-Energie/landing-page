@@ -8,13 +8,7 @@ const SvgCharts = () => (
    id="svg2"
    width="4946.6665"
    height="4946.6665"
-   viewBox="0 0 4946.6665 4946.6665"
-   sodipodi:docname="Wavy_Bus-28_Single-12.eps"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   viewBox="0 0 4946.6665 4946.6665">
   <defs
      id="defs6">
     <clipPath
