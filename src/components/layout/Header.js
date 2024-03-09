@@ -6,18 +6,19 @@ import Button from '../Button';
 const Header = () => (
   <header className="sticky top-0 bg-white shadow">
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
-      <div className="flex items-center text-2xl">
-        <div className="w-12 mr-3">
+      <div className="flex items-center text-2xl gap-1">
+        {/* <div className="w-12 mr-3">
           <LogoIcon />
-        </div>
-        HEA Energie
+        </div> */}
+        <span className="text-primary font-bold">HEA</span>
+        <span>Energie</span>
       </div>
       <div className="flex mt-4 sm:mt-0">
-        <AnchorLink className="px-4" href="#features">
-          Features
+        <AnchorLink className="px-4" href="#leistungen">
+          Leistungen
         </AnchorLink>
         <AnchorLink className="px-4" href="#services">
-          Services
+          Über uns
         </AnchorLink>
         <AnchorLink className="px-4" href="#stats">
           Stats
@@ -27,7 +28,7 @@ const Header = () => (
         </AnchorLink>
       </div>
       <div className="hidden md:block">
-        <Button className="text-sm">Start Free Trial</Button>
+        <Button className="text-sm">Kontakt</Button>
       </div>
     </div>
   </header>

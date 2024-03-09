@@ -12,9 +12,11 @@
     "build": "gatsby build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "prettify": "prettier --write \"src/**/*.js\""
   },
   "dependencies": {
+    "@fontsource/roboto-slab": "^5.0.19",
     "gatsby": "^5.13.3",
     "gatsby-plugin-emotion": "^8.13.1",
     "gatsby-theme-codebushi": "^1.0.0",

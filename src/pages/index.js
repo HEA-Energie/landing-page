@@ -1,14 +1,15 @@
-import React from 'react';
-import Button from '../components/Button';
-import Card from '../components/Card';
-import CustomerCard from '../components/CustomerCard';
-import LabelText from '../components/LabelText';
-import Layout from '../components/layout/Layout';
-import SplitSection from '../components/SplitSection';
-import StatsBox from '../components/StatsBox';
-import customerData from '../data/customer-data';
-import HeroImage from '../svg/HeroImage';
-import SvgCharts from '../svg/SvgCharts';
+import React from 'react'
+import Button from '../components/Button'
+import Card from '../components/Card'
+import CustomerCard from '../components/CustomerCard'
+import LabelText from '../components/LabelText'
+import Layout from '../components/layout/Layout'
+import SplitSection from '../components/SplitSection'
+import StatsBox from '../components/StatsBox'
+import customerData from '../data/customer-data'
+import HeroImage from '../svg/HeroImage'
+import SvgCharts from '../svg/SvgCharts'
+import BubbleImage from '../svg/Bubble'
 
 const Index = () => (
   <Layout>
@@ -20,43 +21,58 @@ const Index = () => (
             Effiziente Abrechnungslösungen für die digitale Ära: Einfach. Schnell. Zuverlässig.
           </p>
           <p className="mt-8 md:mt-12">
-            <Button size="lg">Hosted by Az</Button>
+            <Button size="lg">Zu unseren Leistungen</Button>
           </p>
-          <p className="mt-4 text-gray-600">Sed fermentum felis ut cursu</p>
+          <p className="mt-4 text-gray-600">
+            Wir sind Ihr Partner für innovative digitale Abrechnungslösungen für Strom, Gas und
+            Wasser.
+            {/* . Unser Ziel ist es, die Abrechnungsprozesse für Ihre Immobilien zu vereinfachen
+            und zu optimieren, indem wir modernste Funk-Technologie nutzen. Egal ob Sie kleinere
+            Wohneinheiten, Wohnkomplexe oder große Gewerbeimmobilien verwalten, wir bieten Ihnen die
+            passende Lösung. */}
+          </p>
         </div>
         <div className="lg:w-1/2">
           <HeroImage />
         </div>
       </div>
     </section>
-    <section id="features" className="py-20 lg:pb-40 lg:pt-48">
+    <section id="leistungen" className="py-20 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Main Features</h2>
+        <h2 className="text-3xl lg:text-5xl font-semibold">Leistungen</h2>
+        {/* <BubbleImage /> */}
+
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service One</p>
+              <p className="font-semibold text-xl">Jahresabrechnungen</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                Vereinfachen Sie die Erstellung Ihrer Jahresabrechnungen basierend auf den über das
+                Jahr gesammelten Verbrauchsdaten Ihrer Zähler. Mit unserer Technologie
+                automatisieren Sie den Prozess, sichern sich präzise Abrechnungen und steigern die
+                Effizienz Ihrer Verwaltung. Entdecken Sie, wie einfach und benutzerfreundlich unsere
+                Lösungen sind
               </p>
             </Card>
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Two</p>
+              <p className="font-semibold text-xl">Monatliche Verbrauchsnachweise</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                Mit unseren monatlichen Verbrauchsnachweisen haben Sie stets im Blick, wie viel
+                Energie Sie verbrauchen und welche Kosten dabei entstehen. Bleiben Sie informiert
+                und optimieren Sie Ihren Verbrauch – einfach und effizient.
               </p>
             </Card>
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Three</p>
+              <p className="font-semibold text-xl">Montageservice</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                Wir übernehmen den kompletten Einbau für Sie und sorgen dafür, dass Ihre Daten
+                sicher in unseren Systemen ankommen. Lehnen Sie sich zurück und genießen Sie unsere
+                umfassenden Montagedienstleistungen, während wir sicherstellen, dass alles
+                reibungslos funktioniert.
               </p>
             </Card>
           </div>
@@ -143,6 +159,6 @@ const Index = () => (
       </p>
     </section>
   </Layout>
-);
+)
 
-export default Index;
+export default Index
