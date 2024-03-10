@@ -1,21 +1,21 @@
 module.exports = {
+  content: ['./src/pages/**/*.{js,jsx,ts,tsx}', './src/components/**/*.{js,jsx,ts,tsx}'],
+  // mode: 'jit',
+  // purge: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
   theme: {
     fontFamily: {
-      sans:  ["Roboto Slab", "sans-serif"]
+      sans: ['Roboto Slab', 'sans-serif'],
     },
     extend: {
       colors: {
-        primary: {
-          lighter: '#c8d8e4',
-          default: '#2596be',
-          darker: '#2b6777'
-        },
+        primary: '#2596be',
         secondary: '#c8d8e4',
         contrast: '#52ab98',
-        gray: '#f2f2f2'
+        gray: '#f2f2f2',
+        light: '#2596be',
       },
-    }
+    },
   },
   variants: {},
-  plugins: []
-};
+  plugins: [],
+}

@@ -10,26 +10,39 @@ import customerData from '../data/customer-data'
 import HeroImage from '../svg/HeroImage'
 import SvgCharts from '../svg/SvgCharts'
 import BubbleImage from '../svg/Bubble'
+import Logo from '../img/pexels-sam-forson-243138.jpg'
 
 const Index = () => (
   <Layout>
-    <section className="pt-20 md:pt-40">
+    <div className="relative">
+      <img src={Logo} alt="Logo" className="w-full h-[60vh] object-cover object-bottom" />
+      <div className="text-white absolute abs-center-y left-20 bg-primary rounded-md  shadow-xl p-12 flex flex-col gap-8">
+        <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold max-w-xl">
+          {' '}
+          Effiziente Abrechnungslösungen für die digitale Ära.
+        </h1>
+        <span className="text-xl">Einfach. Schnell. Zuverlässig.</span>
+        <button className="bg-secondary  hover:bg-contrast hover:text-white mt-4 text-black py-2 px-4 rounded-md w-1/2 shadow-md">
+          Zu unseren Leistungen
+        </button>
+      </div>
+    </div>
+
+    <section className="pt-20 md:pt-40 lg:pb-12">
       <div className="container mx-auto px-8 lg:flex">
-        <div className="text-center lg:text-left lg:w-1/2">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">HEA Energie</h1>
-          <p className="text-xl lg:text-2xl mt-6 font-light">
-            Effiziente Abrechnungslösungen für die digitale Ära: Einfach. Schnell. Zuverlässig.
-          </p>
-          <p className="mt-8 md:mt-12">
-            <Button size="lg">Zu unseren Leistungen</Button>
-          </p>
-          <p className="mt-4 text-gray-600">
+        <div className="text-center flex flex-col gap-8 lg:text-left lg:w-1/2 h-[50vh]">
+          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+            Abrechnungen einfach gemacht
+          </h1>
+          <p className="text-xl lg:text-2xl font-light">
             Wir sind Ihr Partner für innovative digitale Abrechnungslösungen für Strom, Gas und
             Wasser.
-            {/* . Unser Ziel ist es, die Abrechnungsprozesse für Ihre Immobilien zu vereinfachen
-            und zu optimieren, indem wir modernste Funk-Technologie nutzen. Egal ob Sie kleinere
+          </p>
+          <p className="text-gray-600">
+            Unser Ziel ist es, die Abrechnungsprozesse für Ihre Immobilien zu vereinfachen und zu
+            optimieren, indem wir modernste Funk-Technologie nutzen. Egal ob Sie kleinere
             Wohneinheiten, Wohnkomplexe oder große Gewerbeimmobilien verwalten, wir bieten Ihnen die
-            passende Lösung. */}
+            passende Lösung.
           </p>
         </div>
         <div className="lg:w-1/2">
@@ -37,7 +50,10 @@ const Index = () => (
         </div>
       </div>
     </section>
-    <section id="leistungen" className="py-20 lg:pb-40 lg:pt-48">
+    <div className="flex justify-center">
+      <BubbleImage />
+    </div>
+    <section id="leistungen" className="py-20 lg:pb-40 lg:pt-12">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Leistungen</h2>
         {/* <BubbleImage /> */}

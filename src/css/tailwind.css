@@ -1,12 +1,18 @@
 @tailwind base;
 
+@tailwind components;
+
+@tailwind utilities;
+
 a {
   @apply text-primary;
 }
 a:hover {
-  @apply text-primary-darker;
+  @apply text-secondary;
 }
 
-@tailwind components;
-
-@tailwind utilities;
+.abs-center-y {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
