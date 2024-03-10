@@ -16,8 +16,8 @@ const Index = () => (
   <Layout>
     <div className="relative">
       <img src={Logo} alt="Logo" className="w-full h-[60vh] object-cover object-bottom" />
-      <div className="text-white absolute abs-center-y left-20 bg-primary rounded-md  shadow-xl p-12 flex flex-col gap-8">
-        <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold max-w-xl">
+      <div className="text-white absolute abs-center md:-translate-x-0 md:-translate-y-1/2 w-5/6 md:w-1/3 md:left-20 bg-primary rounded-md  shadow-xl p-4 md:p-12 flex flex-col gap-8">
+        <h1 className="text-xl lg:text-3xl xl:text-4xl font-bold max-w-xl">
           {' '}
           Effiziente Abrechnungslösungen für die digitale Ära.
         </h1>

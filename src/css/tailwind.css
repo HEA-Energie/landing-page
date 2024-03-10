@@ -14,5 +14,20 @@ a:hover {
 .abs-center-y {
   position: absolute;
   top: 50%;
+  left: 0%;
   transform: translate(0%, -50%);
+}
+
+.abs-center-x {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
