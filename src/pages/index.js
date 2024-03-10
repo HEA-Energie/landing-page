@@ -10,16 +10,18 @@ import customerData from '../data/customer-data'
 import HeroImage from '../svg/HeroImage'
 import SvgCharts from '../svg/SvgCharts'
 import BubbleImage from '../svg/Bubble'
-import Logo from '../img/pexels-sam-forson-243138.jpg'
+import Logo from '../img/pexels-laura-penwell-3608056.jpg'
+import CardIcon from '../components/CardIcon'
+import { LuFileBarChart } from 'react-icons/lu'
 
 const Index = () => (
   <Layout>
     <div className="relative">
-      <img src={Logo} alt="Logo" className="w-full h-[60vh] object-cover object-bottom" />
-      <div className="text-white absolute abs-center md:-translate-x-0 md:-translate-y-1/2 w-5/6 md:w-1/3 md:left-20 bg-primary rounded-md  shadow-xl p-4 md:p-12 flex flex-col gap-8">
+      <img src={Logo} alt="Logo" className="w-full h-[60vh] object-cover object-center" />
+      <div className="text-white absolute abs-center md:-translate-x-0 md:-translate-y-1/2 w-5/6 md:w-1/3 md:left-20 bg-primary rounded-md shadow-2xl p-4 md:p-12 flex flex-col gap-8">
         <h1 className="text-xl lg:text-3xl xl:text-4xl font-bold max-w-xl">
           {' '}
-          Effiziente Abrechnungslösungen für die digitale Ära.
+          Effiziente Abrechnungslösungen für Ihre Immobilien.
         </h1>
         <span className="text-xl">Einfach. Schnell. Zuverlässig.</span>
         <button className="bg-secondary  hover:bg-contrast hover:text-white mt-4 text-black py-2 px-4 rounded-md w-1/2 shadow-md">
@@ -61,8 +63,9 @@ const Index = () => (
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Card className="mb-8">
+              <CardIcon icon={LuFileBarChart}></CardIcon>
               <p className="font-semibold text-xl">Jahresabrechnungen</p>
-              <p className="mt-4">
+              <p className="">
                 Vereinfachen Sie die Erstellung Ihrer Jahresabrechnungen basierend auf den über das
                 Jahr gesammelten Verbrauchsdaten Ihrer Zähler. Mit unserer Technologie
                 automatisieren Sie den Prozess, sichern sich präzise Abrechnungen und steigern die
