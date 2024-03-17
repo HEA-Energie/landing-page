@@ -31,3 +31,8 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.gradient-primary-to-secondary {
+  background: #2596be;
+  background: linear-gradient(140deg, #2596be 0%, #c8d8e4 35%);
+}

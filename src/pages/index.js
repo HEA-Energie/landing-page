@@ -10,6 +10,8 @@ import customerData from '../data/customer-data'
 import HeroImage from '../svg/HeroImage'
 import SvgCharts from '../svg/SvgCharts'
 import BubbleImage from '../svg/Bubble'
+import WaveTop from '../svg/WaveTop'
+import WaveBottom from '../svg/WaveBottom'
 import Logo from '../img/pexels-laura-penwell-3608056.jpg'
 import CardIcon from '../components/CardIcon'
 import { LuFileBarChart } from 'react-icons/lu'
@@ -30,7 +32,7 @@ const Index = () => (
       </div>
     </div>
 
-    <section className="pt-20 md:pt-40 lg:pb-12">
+    <section className="pt-20 md:pt-40 lg:pb-2">
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center flex flex-col gap-8 lg:text-left lg:w-1/2 h-[50vh]">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
@@ -52,8 +54,26 @@ const Index = () => (
         </div>
       </div>
     </section>
-    <div className="flex justify-center">
-      <BubbleImage />
+    <div className="flex flex-col">
+      <WaveTop />
+      <div className="bg-primary text-white">
+        <SplitSection
+          secondarySlot={
+            <div className="lg:pr-32 xl:pr-48">
+              <h3 className="text-3xl font-semibold leading-tight">Jahresabrechnungen</h3>
+              <p className="mt-8 text-l font-light leading-relaxed">
+                Vereinfachen Sie die Erstellung Ihrer Jahresabrechnungen basierend auf den über das
+                Jahr gesammelten Verbrauchsdaten Ihrer Zähler. Mit unserer Technologie
+                automatisieren Sie den Prozess, sichern sich präzise Abrechnungen und steigern die
+                Effizienz Ihrer Verwaltung. Entdecken Sie, wie einfach und benutzerfreundlich unsere
+                Lösungen sind
+              </p>
+            </div>
+          }
+          primarySlot={<SvgCharts />}
+        />
+      </div>
+      <WaveBottom />
     </div>
     <section id="leistungen" className="py-20 lg:pb-40 lg:pt-12">
       <div className="container mx-auto text-center">
