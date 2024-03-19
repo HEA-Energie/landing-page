@@ -12,15 +12,17 @@ import SvgCharts from '../svg/SvgCharts'
 import BubbleImage from '../svg/Bubble'
 import WaveTop from '../svg/WaveTop'
 import WaveBottom from '../svg/WaveBottom'
-import Logo from '../img/pexels-laura-penwell-3608056.jpg'
+import Logo from '../img/wind-mills.jpg'
 import CardIcon from '../components/CardIcon'
 import { LuFileBarChart } from 'react-icons/lu'
+import Report from '../img/report-analysis.svg'
+import OnlineReport from '../img/report-analysis-light.svg'
 
 const Index = () => (
   <Layout>
     <div className="relative">
-      <img src={Logo} alt="Logo" className="w-full h-[60vh] object-cover object-center" />
-      <div className="text-white absolute abs-center md:-translate-x-0 md:-translate-y-1/2 w-5/6 md:w-1/3 md:left-20 bg-primary rounded-md shadow-2xl p-4 md:p-12 flex flex-col gap-8">
+      <img src={Logo} alt="Logo" className="w-full h-[60vh] object-cover object-bottom" />
+      <div className="text-white absolute abs-center md:-translate-x-0 md:-translate-y-1/2 w-5/6 md:w-1/3 md:left-20 bg-opacity-95 bg-primary rounded-md shadow-2xl p-4 md:p-12 flex flex-col gap-8">
         <h1 className="text-xl lg:text-3xl xl:text-4xl font-bold max-w-xl">
           {' '}
           Effiziente Abrechnungslösungen für Ihre Immobilien.
@@ -33,8 +35,8 @@ const Index = () => (
     </div>
 
     <section className="pt-20 md:pt-40 lg:pb-2">
-      <div className="container mx-auto px-8 lg:flex">
-        <div className="text-center flex flex-col gap-8 lg:text-left lg:w-1/2 h-[50vh]">
+      <div className="container mx-auto px-8 flex flex-col lg:flex-row items-center gap-10">
+        <div className="text-center flex flex-col gap-8 lg:text-left lg:w-1/2">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
             Abrechnungen einfach gemacht
           </h1>
@@ -49,32 +51,38 @@ const Index = () => (
             passende Lösung.
           </p>
         </div>
-        <div className="lg:w-1/2">
-          <HeroImage />
+        <div className="lg:w-1/2 w-full flex justify-center">
+          <img src={Report} alt="Logo" className="w-2/3" />
         </div>
       </div>
     </section>
-    <div className="flex flex-col">
+
+    <section>
       <WaveTop />
       <div className="bg-primary text-white">
-        <SplitSection
-          secondarySlot={
+        <div className="container mx-auto px-8 flex flex-col-reverse lg:flex-row items-center lg:gap-20">
+          <div className="w-full lg:w-1/2 flex justify-center">
+            <img src={OnlineReport} alt="Logo" className="w-2/3" />
+          </div>
+          <div className="text-center flex flex-col gap-8 lg:text-left lg:w-1/2 ">
             <div className="lg:pr-32 xl:pr-48">
-              <h3 className="text-3xl font-semibold leading-tight">Jahresabrechnungen</h3>
+              <h3 className="text-4xl font-semibold leading-tight">Jahresabrechnungen</h3>
               <p className="mt-8 text-l font-light leading-relaxed">
-                Vereinfachen Sie die Erstellung Ihrer Jahresabrechnungen basierend auf den über das
-                Jahr gesammelten Verbrauchsdaten Ihrer Zähler. Mit unserer Technologie
-                automatisieren Sie den Prozess, sichern sich präzise Abrechnungen und steigern die
-                Effizienz Ihrer Verwaltung. Entdecken Sie, wie einfach und benutzerfreundlich unsere
-                Lösungen sind
+                Sie möchten eine präzise und professionelle Jahresabrechnung für Ihre
+                Mehrfamilienhäuser erstellen? Als Immobilienbesitzer oder Hausverwaltung ist es
+                entscheidend, eine transparente und gut organisierte Abrechnung vorzulegen, um
+                sowohl Ihre eigenen Finanzen als auch die Ihrer Mieter zu verwalten. Eine korrekte
+                Jahresabrechnung dient nicht nur der rechtlichen Erfüllung, sondern auch der
+                Aufrechterhaltung eines reibungslosen Betriebs und einer vertrauensvollen Beziehung
+                zu Ihren Mietern.
               </p>
             </div>
-          }
-          primarySlot={<SvgCharts />}
-        />
+          </div>
+        </div>
       </div>
       <WaveBottom />
-    </div>
+    </section>
+
     <section id="leistungen" className="py-20 lg:pb-40 lg:pt-12">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Leistungen</h2>
@@ -131,35 +139,7 @@ const Index = () => (
       }
       secondarySlot={<SvgCharts />}
     />
-    <SplitSection
-      reverseOrder
-      primarySlot={
-        <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Design And Plan Your Business Growth Steps
-          </h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            Once the market analysis process is completed our staff will search for opportunities
-            that are in reach
-          </p>
-        </div>
-      }
-      secondarySlot={<SvgCharts />}
-    />
-    <SplitSection
-      primarySlot={
-        <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Search For Performance Optimization
-          </h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            With all the information in place you will be presented with an action plan that your
-            company needs to follow
-          </p>
-        </div>
-      }
-      secondarySlot={<SvgCharts />}
-    />
+
     <section id="stats" className="py-20 lg:pt-32">
       <div className="container mx-auto text-center">
         <LabelText className="text-gray-600">Our customers get results</LabelText>

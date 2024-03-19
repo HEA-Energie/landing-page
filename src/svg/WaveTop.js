@@ -1,7 +1,7 @@
 import React from 'react'
 
 const WaveTop = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 150 1440 150">
     <path
       fill="#2596be"
       fill-opacity="1"

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const WaveBottom = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
     <path
       fill="#2596be"
       fill-opacity="1"
