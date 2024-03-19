@@ -60,7 +60,7 @@ const Index = () => (
     <section>
       <WaveTop />
       <div className="bg-primary text-white">
-        <div className="container mx-auto px-8 flex flex-col-reverse lg:flex-row items-center lg:gap-20">
+        <div className="container mx-auto px-8 flex flex-col-reverse lg:flex-row items-center gap-10">
           <div className="w-full lg:w-1/2 flex justify-center">
             <img src={OnlineReport} alt="Logo" className="w-2/3" />
           </div>
