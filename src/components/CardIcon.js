@@ -3,10 +3,10 @@ import { IconType } from 'react-icons'
 import { LuFileBarChart } from 'react-icons/lu'
 
 const CardIcon = ({ icon }) => (
-  <div className="flex justify-items-center justify-center">
+  <div className="flex p-4 self-center rounded-full bg-primary">
     {React.createElement(icon, {
       size: 50,
-      className: 'text-primary',
+      className: 'text-white',
     })}
   </div>
 )

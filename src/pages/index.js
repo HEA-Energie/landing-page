@@ -17,6 +17,10 @@ import CardIcon from '../components/CardIcon'
 import { LuFileBarChart } from 'react-icons/lu'
 import Report from '../img/report-analysis.svg'
 import OnlineReport from '../img/report-analysis-light.svg'
+import MonthlyReport from '../img/report-presentation.svg'
+import { IoRadioSharp } from 'react-icons/io5'
+import { RiQuestionAnswerLine } from 'react-icons/ri'
+import { MdMoreTime } from 'react-icons/md'
 
 const Index = () => (
   <Layout>
@@ -71,10 +75,24 @@ const Index = () => (
                 Sie möchten eine präzise und professionelle Jahresabrechnung für Ihre
                 Mehrfamilienhäuser erstellen? Als Immobilienbesitzer oder Hausverwaltung ist es
                 entscheidend, eine transparente und gut organisierte Abrechnung vorzulegen, um
-                sowohl Ihre eigenen Finanzen als auch die Ihrer Mieter zu verwalten. Eine korrekte
-                Jahresabrechnung dient nicht nur der rechtlichen Erfüllung, sondern auch der
-                Aufrechterhaltung eines reibungslosen Betriebs und einer vertrauensvollen Beziehung
-                zu Ihren Mietern.
+                sowohl Ihre eigenen Finanzen als auch die Ihrer Mieter zu verwalten.
+                <ul className=" mt-2 list-disc space-y-2">
+                  <li>
+                    <strong className="font-bold">Transparenz und Überblick:</strong> Durch die
+                    Bereitstellung detaillierter Jahresabrechnungen erhalten Verbraucher einen
+                    umfassenden Überblick über ihren Energieverbrauch über das gesamte Jahr hinweg
+                  </li>
+                  <li>
+                    <strong className="font-bold">Kostenkontrolle:</strong> Jahresabrechnungen
+                    bieten eine solide Grundlage für die Budgetplanung und ermöglichen es
+                    Verbrauchern, ihre Energiekosten besser zu kontrollieren.
+                  </li>
+                  <li>
+                    <strong className="font-bold">Erfüllung rechtlicher Pflichten:</strong> Mit
+                    einer korrekten Jahresabrechnung erfüllen Sie Ihre rechtliche Pflichten
+                    gegenüber den Mietern.
+                  </li>
+                </ul>
               </p>
             </div>
           </div>
@@ -83,44 +101,81 @@ const Index = () => (
       <WaveBottom />
     </section>
 
-    <section id="leistungen" className="py-20 lg:pb-40 lg:pt-12">
+    <section>
+      <div className="container mx-auto px-8 flex flex-col lg:flex-row items-center gap-10">
+        <div className="text-center flex flex-col gap-8 lg:text-left lg:w-1/2">
+          <div className="lg:pr-32 xl:pr-48">
+            <h3 className="text-4xl font-semibold leading-tight">Monatliche Verbrauchsnachweise</h3>
+            <p className="mt-8 text-l font-light leading-relaxed">
+              Monatliche Energieverbrauchsnachweise bieten eine klare Übersicht über den
+              Energieverbrauch von Haushalten und Unternehmen. Die Vorteile sind vielfältig:
+            </p>
+            <ul className=" mt-2 list-disc space-y-2">
+              <li>
+                <strong className="font-bold">Transparenz und Bewusstsein:</strong> Durch
+                regelmäßige Berichte erhalten Verbraucher ein klares Bild ihres Energieverbrauchs,
+                was zu einem bewussteren Umgang mit Energie führt.
+              </li>
+              <li>
+                <strong>Identifizierung von Einsparpotenzialen:</strong> Die Daten ermöglichen es,
+                Bereiche mit hohem Verbrauch zu erkennen und gezielt Maßnahmen zur
+                Effizienzsteigerung zu ergreifen.
+              </li>
+
+              <li>
+                <strong>Umweltfreundlichkeit:</strong> Ein effizienter Verbrauch reduziert den
+                ökologischen Fußabdruck und trägt zur Nachhaltigkeit bei.
+              </li>
+              <li>
+                <strong>Grundlage für Effizienzmaßnahmen:</strong> Die Nachweise dienen als Basis
+                für gezielte Investitionen in energieeffiziente Technologien und
+                Verhaltensänderungen.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="lg:w-1/2 w-full flex justify-center">
+          <img src={MonthlyReport} alt="Logo" className="w-2/3" />
+        </div>
+      </div>
+    </section>
+
+    <section id="leistungen" className="py-20 lg:pb-40 lg:pt-20">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Leistungen</h2>
+        <h2 className="text-2xl lg:text-4xl font-semibold mb-4">Ihr Vorteile im Überblick</h2>
         {/* <BubbleImage /> */}
 
-        <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
+        <div className="flex flex-col flex-wrap sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <CardIcon icon={LuFileBarChart}></CardIcon>
-              <p className="font-semibold text-xl">Jahresabrechnungen</p>
-              <p className="">
-                Vereinfachen Sie die Erstellung Ihrer Jahresabrechnungen basierend auf den über das
-                Jahr gesammelten Verbrauchsdaten Ihrer Zähler. Mit unserer Technologie
-                automatisieren Sie den Prozess, sichern sich präzise Abrechnungen und steigern die
-                Effizienz Ihrer Verwaltung. Entdecken Sie, wie einfach und benutzerfreundlich unsere
-                Lösungen sind
-              </p>
+            <Card className="mb-8 flex flex-col items-center justify-center gap-4">
+              <span>
+                <CardIcon icon={LuFileBarChart}></CardIcon>
+              </span>
+              <p className="font-semibold">Rechtskonforme Abrechnung</p>
             </Card>
           </div>
           <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Monatliche Verbrauchsnachweise</p>
-              <p className="mt-4">
-                Mit unseren monatlichen Verbrauchsnachweisen haben Sie stets im Blick, wie viel
-                Energie Sie verbrauchen und welche Kosten dabei entstehen. Bleiben Sie informiert
-                und optimieren Sie Ihren Verbrauch – einfach und effizient.
-              </p>
+            <Card className="mb-8 flex flex-col items-center justify-center gap-4">
+              <span>
+                <CardIcon icon={MdMoreTime}></CardIcon>
+              </span>
+              <p className="font-semibold">Zeitersparnis</p>
             </Card>
           </div>
           <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Montageservice</p>
-              <p className="mt-4">
-                Wir übernehmen den kompletten Einbau für Sie und sorgen dafür, dass Ihre Daten
-                sicher in unseren Systemen ankommen. Lehnen Sie sich zurück und genießen Sie unsere
-                umfassenden Montagedienstleistungen, während wir sicherstellen, dass alles
-                reibungslos funktioniert.
-              </p>
+            <Card className="mb-8 flex flex-col items-center justify-center gap-4">
+              <span>
+                <CardIcon icon={IoRadioSharp}></CardIcon>
+              </span>
+              <p className="font-semibold">Moderne Funktechnologie</p>
+            </Card>
+          </div>
+          <div className="flex-1 px-3">
+            <Card className="mb-8 flex flex-col items-center justify-center gap-4">
+              <span>
+                <CardIcon icon={RiQuestionAnswerLine}></CardIcon>
+              </span>
+              <p className="font-semibold">Persönliche Beratung</p>
             </Card>
           </div>
         </div>
