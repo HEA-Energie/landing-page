@@ -76,24 +76,24 @@ const Index = () => (
                 Mehrfamilienhäuser erstellen? Als Immobilienbesitzer oder Hausverwaltung ist es
                 entscheidend, eine transparente und gut organisierte Abrechnung vorzulegen, um
                 sowohl Ihre eigenen Finanzen als auch die Ihrer Mieter zu verwalten.
-                <ul className=" mt-2 list-disc space-y-2">
-                  <li>
-                    <strong className="font-bold">Transparenz und Überblick:</strong> Durch die
-                    Bereitstellung detaillierter Jahresabrechnungen erhalten Verbraucher einen
-                    umfassenden Überblick über ihren Energieverbrauch über das gesamte Jahr hinweg
-                  </li>
-                  <li>
-                    <strong className="font-bold">Kostenkontrolle:</strong> Jahresabrechnungen
-                    bieten eine solide Grundlage für die Budgetplanung und ermöglichen es
-                    Verbrauchern, ihre Energiekosten besser zu kontrollieren.
-                  </li>
-                  <li>
-                    <strong className="font-bold">Erfüllung rechtlicher Pflichten:</strong> Mit
-                    einer korrekten Jahresabrechnung erfüllen Sie Ihre rechtliche Pflichten
-                    gegenüber den Mietern.
-                  </li>
-                </ul>
               </p>
+              <ul className=" mt-2 list-disc space-y-4">
+                <li>
+                  <strong className="font-bold">Transparenz und Überblick:</strong> Durch die
+                  Bereitstellung detaillierter Jahresabrechnungen erhalten Verbraucher einen
+                  umfassenden Überblick über ihren Energieverbrauch über das gesamte Jahr hinweg
+                </li>
+                <li>
+                  <strong className="font-bold">Kostenkontrolle:</strong> Jahresabrechnungen bieten
+                  eine solide Grundlage für die Budgetplanung und ermöglichen es Verbrauchern, ihre
+                  Energiekosten besser zu kontrollieren.
+                </li>
+                <li>
+                  <strong className="font-bold">Erfüllung rechtlicher Pflichten:</strong> Mit einer
+                  korrekten Jahresabrechnung erfüllen Sie Ihre rechtliche Pflichten gegenüber den
+                  Mietern.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@ const Index = () => (
               Monatliche Energieverbrauchsnachweise bieten eine klare Übersicht über den
               Energieverbrauch von Haushalten und Unternehmen. Die Vorteile sind vielfältig:
             </p>
-            <ul className=" mt-2 list-disc space-y-2">
+            <ul className=" mt-2 list-disc space-y-4">
               <li>
                 <strong className="font-bold">Transparenz und Bewusstsein:</strong> Durch
                 regelmäßige Berichte erhalten Verbraucher ein klares Bild ihres Energieverbrauchs,
@@ -126,11 +126,6 @@ const Index = () => (
                 <strong>Umweltfreundlichkeit:</strong> Ein effizienter Verbrauch reduziert den
                 ökologischen Fußabdruck und trägt zur Nachhaltigkeit bei.
               </li>
-              <li>
-                <strong>Grundlage für Effizienzmaßnahmen:</strong> Die Nachweise dienen als Basis
-                für gezielte Investitionen in energieeffiziente Technologien und
-                Verhaltensänderungen.
-              </li>
             </ul>
           </div>
         </div>
@@ -140,12 +135,12 @@ const Index = () => (
       </div>
     </section>
 
-    <section id="leistungen" className="py-20 lg:pb-40 lg:pt-20">
+    <section id="leistungen" className="py-10 lg:pt-40">
       <div className="container mx-auto text-center">
-        <h2 className="text-2xl lg:text-4xl font-semibold mb-4">Ihr Vorteile im Überblick</h2>
+        <h2 className="text-2xl lg:text-4xl font-semibold">Ihr Vorteile im Überblick</h2>
         {/* <BubbleImage /> */}
 
-        <div className="flex flex-col flex-wrap sm:flex-row sm:-mx-3 mt-12">
+        <div className="flex flex-col flex-wrap sm:flex-row sm:-mx-3 mt-20">
           <div className="flex-1 px-3">
             <Card className="mb-8 flex flex-col items-center justify-center gap-4">
               <span>
@@ -181,7 +176,7 @@ const Index = () => (
         </div>
       </div>
     </section>
-    <SplitSection
+    {/* <SplitSection
       id="services"
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
@@ -193,25 +188,25 @@ const Index = () => (
         </div>
       }
       secondarySlot={<SvgCharts />}
-    />
+    /> */}
 
-    <section id="stats" className="py-20 lg:pt-32">
+    <section id="stats" className="pb-20">
       <div className="container mx-auto text-center">
-        <LabelText className="text-gray-600">Our customers get results</LabelText>
+        <LabelText className="text-gray-600">Mit uns bekommen Sie</LabelText>
         <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
           <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
+            <StatsBox primaryText="+100%" secondaryText="Transparenz" />
           </div>
           <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
+            <StatsBox primaryText="+100%" secondaryText="Effizienz" />
           </div>
           <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
+            <StatsBox primaryText="+100%" secondaryText="Kompetenz" />
           </div>
         </div>
       </div>
     </section>
-    <section id="testimonials" className="py-20 lg:py-40">
+    {/* <section id="testimonials" className="py-20 lg:py-40">
       <div className="container mx-auto">
         <LabelText className="mb-8 text-gray-600 text-center">What customers are saying</LabelText>
         <div className="flex flex-col md:flex-row md:-mx-3">
@@ -222,14 +217,14 @@ const Index = () => (
           ))}
         </div>
       </div>
-    </section>
-    <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
-      <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
+    </section> */}
+    <section className="container mx-auto my-10 py-20 bg-gray-200 rounded-lg text-center">
+      <h3 className="text-5xl font-semibold">Haben Sie Interesse an unseren Leistungen?</h3>
       <p className="mt-8 text-xl font-light">
-        Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque fermentum dui faucibus in.
+        Dann lassen Sie uns einfach unverbindlich in Kontakt treten.
       </p>
       <p className="mt-8">
-        <Button size="xl">Get Started Now</Button>
+        <Button size="xl">Kontakt aufnehmen</Button>
       </p>
     </section>
   </Layout>

@@ -18,13 +18,10 @@ const Header = () => (
           Leistungen
         </AnchorLink>
         <AnchorLink className="px-4" href="#services">
-          Über uns
+          Technik
         </AnchorLink>
         <AnchorLink className="px-4" href="#stats">
-          Stats
-        </AnchorLink>
-        <AnchorLink className="px-4" href="#testimonials">
-          Testimonials
+          Kontakt & Services
         </AnchorLink>
       </div>
       <div className="hidden md:block">
