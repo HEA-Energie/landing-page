@@ -18,12 +18,12 @@ const Header = () => (
         <Link to="/" className="px-4">
           Home
         </Link>
-        <Link to="leistungen" className="px-4">
+        <Link to="/leistungen" className="px-4">
           Leistungen
         </Link>
-        <AnchorLink className="px-4" href="#services">
+        <Link to="/technik" className="px-4">
           Technik
-        </AnchorLink>
+        </Link>
         <AnchorLink className="px-4" href="#stats">
           Kontakt & Services
         </AnchorLink>
