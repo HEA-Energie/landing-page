@@ -7,6 +7,7 @@ import Logo from '../../img/analytics-2618277_1920.jpg'
 import Report from '../../img/report-analysis.svg'
 import OnlineReport from '../../img/report-analysis-light.svg'
 import MonthlyReport from '../../img/report-presentation.svg'
+import Montage from '../../img/construction-worker.svg'
 
 const Leistungen = () => (
   <Layout>
@@ -25,24 +26,43 @@ const Leistungen = () => (
     </div>
 
     <section className="pt-20 md:pt-40 lg:pb-2">
-      <div className="container mx-auto px-8 flex flex-col lg:flex-row items-center gap-10">
-        <div className="text-center flex flex-col gap-8 lg:text-left lg:w-1/2">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
-            Abrechnungen einfach gemacht
-          </h1>
-          <p className="text-xl lg:text-2xl font-light">
-            Wir sind Ihr Partner für innovative digitale Abrechnungslösungen für Strom, Gas und
-            Wasser.
-          </p>
-          <p className="text-gray-600">
-            Unser Ziel ist es, die Abrechnungsprozesse für Ihre Immobilien zu vereinfachen und zu
-            optimieren, indem wir modernste Funk-Technologie nutzen. Egal ob Sie kleinere
-            Wohneinheiten, Wohnkomplexe oder große Gewerbeimmobilien verwalten, wir bieten Ihnen die
-            passende Lösung.
-          </p>
-        </div>
-        <div className="lg:w-1/2 w-full flex justify-center">
-          <img src={Report} alt="Logo" className="w-2/3" />
+      <div className="container mx-auto px-8 flex flex-col items-center gap-10">
+        <h1 className="text-2xl lg:text-4xl font-bold leading-none text-primary">
+          Jahresabrechnung
+        </h1>
+        <p className="text-xl lg:text-2xl font-light">
+          Volle Transparenz, Übersichtlichkeit und Rechtskonformität bei Ihrer Verbrauchsabrechnung
+          für Heiz- und Wasserkosten.
+        </p>
+        <div className="flex justify-center mt-5">
+          <div className="w-1/2">
+            <p className="mt-8 text-l font-light leading-relaxed">
+              Sie möchten eine präzise und professionelle Jahresabrechnung für Ihre
+              Mehrfamilienhäuser erstellen? Als Immobilienbesitzer oder Hausverwaltung ist es
+              entscheidend, eine transparente und gut organisierte Abrechnung vorzulegen, um sowohl
+              Ihre eigenen Finanzen als auch die Ihrer Mieter zu verwalten.
+            </p>
+            <ul className="mt-4 list-none lg:list-disc space-y-4">
+              <li>
+                <strong className="font-bold">Transparenz und Überblick:</strong> Durch die
+                Bereitstellung detaillierter Jahresabrechnungen erhalten Verbraucher einen
+                umfassenden Überblick über ihren Energieverbrauch über das gesamte Jahr hinweg
+              </li>
+              <li>
+                <strong className="font-bold">Kostenkontrolle:</strong> Jahresabrechnungen bieten
+                eine solide Grundlage für die Budgetplanung und ermöglichen es Verbrauchern, ihre
+                Energiekosten besser zu kontrollieren.
+              </li>
+              <li>
+                <strong className="font-bold">Erfüllung rechtlicher Pflichten:</strong> Mit einer
+                korrekten Jahresabrechnung erfüllen Sie Ihre rechtliche Pflichten gegenüber den
+                Mietern.
+              </li>
+            </ul>
+          </div>
+          <div className="w-full lg:w-1/2 flex justify-center">
+            <img src={OnlineReport} alt="Logo" className="w-6/12" />
+          </div>
         </div>
       </div>
     </section>
@@ -50,36 +70,39 @@ const Leistungen = () => (
     <section>
       <WaveTop />
       <div className="bg-primary text-white">
-        <div className="container mx-auto px-8 flex flex-col-reverse lg:flex-row items-center gap-10">
-          <div className="w-full lg:w-1/2 flex justify-center">
-            <img src={OnlineReport} alt="Logo" className="w-2/3" />
-          </div>
-          <div className="text-center flex flex-col gap-8 lg:text-left lg:w-1/2 ">
-            <div className="lg:pr-32 xl:pr-48">
-              <h3 className="text-4xl font-semibold leading-tight">Jahresabrechnungen</h3>
+        <div className="container mx-auto px-8 flex flex-col items-center gap-10">
+          <h1 className="text-2xl lg:text-4xl font-bold leading-none">
+            Monatliche Verbrauchsnachweise
+          </h1>
+          <p className="text-xl lg:text-2xl font-light">
+            Einsparungen durch Transparenz und Bewusstsein für den Energieverbrauch von Haushalten
+          </p>
+          <div className="flex justify-center mt-5">
+            <div className="w-1/2">
               <p className="mt-8 text-l font-light leading-relaxed">
-                Sie möchten eine präzise und professionelle Jahresabrechnung für Ihre
-                Mehrfamilienhäuser erstellen? Als Immobilienbesitzer oder Hausverwaltung ist es
-                entscheidend, eine transparente und gut organisierte Abrechnung vorzulegen, um
-                sowohl Ihre eigenen Finanzen als auch die Ihrer Mieter zu verwalten.
+                Monatliche Energieverbrauchsnachweise bieten eine klare Übersicht über den
+                Energieverbrauch von Haushalten und Unternehmen. Die Vorteile sind vielfältig:
               </p>
-              <ul className=" mt-2 list-disc space-y-4">
+              <ul className="mt-4 list-none lg:list-disc space-y-4">
                 <li>
-                  <strong className="font-bold">Transparenz und Überblick:</strong> Durch die
-                  Bereitstellung detaillierter Jahresabrechnungen erhalten Verbraucher einen
-                  umfassenden Überblick über ihren Energieverbrauch über das gesamte Jahr hinweg
+                  <strong className="font-bold">Transparenz und Bewusstsein:</strong> Durch
+                  regelmäßige Berichte erhalten Verbraucher ein klares Bild ihres Energieverbrauchs,
+                  was zu einem bewussteren Umgang mit Energie führt.
                 </li>
                 <li>
-                  <strong className="font-bold">Kostenkontrolle:</strong> Jahresabrechnungen bieten
-                  eine solide Grundlage für die Budgetplanung und ermöglichen es Verbrauchern, ihre
-                  Energiekosten besser zu kontrollieren.
+                  <strong>Identifizierung von Einsparpotenzialen:</strong> Die Daten ermöglichen es,
+                  Bereiche mit hohem Verbrauch zu erkennen und gezielt Maßnahmen zur
+                  Effizienzsteigerung zu ergreifen.
                 </li>
+
                 <li>
-                  <strong className="font-bold">Erfüllung rechtlicher Pflichten:</strong> Mit einer
-                  korrekten Jahresabrechnung erfüllen Sie Ihre rechtliche Pflichten gegenüber den
-                  Mietern.
+                  <strong>Umweltfreundlichkeit:</strong> Ein effizienter Verbrauch reduziert den
+                  ökologischen Fußabdruck und trägt zur Nachhaltigkeit bei.
                 </li>
               </ul>
+            </div>
+            <div className="w-full lg:w-1/2 flex justify-center">
+              <img src={MonthlyReport} alt="Logo" className="w-6/12" />
             </div>
           </div>
         </div>
@@ -87,36 +110,41 @@ const Leistungen = () => (
       <WaveBottom />
     </section>
 
-    <section>
-      <div className="container mx-auto px-8 flex flex-col lg:flex-row items-center gap-10">
-        <div className="text-center flex flex-col gap-8 lg:text-left lg:w-1/2">
-          <div className="lg:pr-32 xl:pr-48">
-            <h3 className="text-4xl font-semibold leading-tight">Monatliche Verbrauchsnachweise</h3>
+    <section className="lg:mb-20">
+      <div className="container mx-auto px-8 flex flex-col items-center gap-10">
+        <h1 className="text-2xl lg:text-4xl font-bold leading-none text-primary">Montage</h1>
+        <p className="text-xl lg:text-2xl font-light">
+          Professionelle Montage von Zählern und Geräten für präzise Abrechnungen und
+          Verbrauchsnachweise
+        </p>
+        <div className="flex justify-center mt-5">
+          <div className="w-1/2">
             <p className="mt-8 text-l font-light leading-relaxed">
-              Monatliche Energieverbrauchsnachweise bieten eine klare Übersicht über den
-              Energieverbrauch von Haushalten und Unternehmen. Die Vorteile sind vielfältig:
+              Wenn Sie wünschen, installiert und kalibriert unser erfahrenes Team von Technikern
+              hochmoderne Zähler und Geräte, die eine präzise Erfassung Ihrer Energiedaten
+              ermöglichen.
             </p>
-            <ul className=" mt-2 list-disc space-y-4">
+            <ul className="mt-4 list-none lg:list-disc space-y-4">
               <li>
-                <strong className="font-bold">Transparenz und Bewusstsein:</strong> Durch
-                regelmäßige Berichte erhalten Verbraucher ein klares Bild ihres Energieverbrauchs,
-                was zu einem bewussteren Umgang mit Energie führt.
+                <strong className="font-bold">Fachkundige Expertise:</strong> Unsere Techniker
+                verfügen über das Fachwissen und die Erfahrung, um eine schnelle und zuverlässige
+                Installation durchzuführen, die Ihren Anforderungen entspricht.
               </li>
               <li>
-                <strong>Identifizierung von Einsparpotenzialen:</strong> Die Daten ermöglichen es,
-                Bereiche mit hohem Verbrauch zu erkennen und gezielt Maßnahmen zur
-                Effizienzsteigerung zu ergreifen.
+                <strong className="font-bold">Hochwertige Produkte:</strong> Wir verwenden nur
+                hochwertige Zähler und Geräte von vertrauenswürdigen Herstellern, um eine
+                langfristige Leistung und Genauigkeit zu gewährleisten.
               </li>
-
               <li>
-                <strong>Umweltfreundlichkeit:</strong> Ein effizienter Verbrauch reduziert den
-                ökologischen Fußabdruck und trägt zur Nachhaltigkeit bei.
+                <strong className="font-bold">Kundenzufriedenheit:</strong> Ihre Zufriedenheit hat
+                für uns oberste Priorität. Wir streben danach, Ihren Erwartungen in Bezug auf
+                Qualität, Service und Zuverlässigkeit gerecht zu werden.
               </li>
             </ul>
           </div>
-        </div>
-        <div className="lg:w-1/2 w-full flex justify-center">
-          <img src={MonthlyReport} alt="Logo" className="w-2/3" />
+          <div className="w-full lg:w-1/2 flex justify-center">
+            <img src={Montage} alt="Logo" className="w-6/12" />
+          </div>
         </div>
       </div>
     </section>

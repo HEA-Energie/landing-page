@@ -21,6 +21,7 @@ import MonthlyReport from '../img/report-presentation.svg'
 import { IoRadioSharp } from 'react-icons/io5'
 import { RiQuestionAnswerLine } from 'react-icons/ri'
 import { MdMoreTime } from 'react-icons/md'
+import { Link } from 'gatsby'
 
 const Index = () => (
   <Layout>
@@ -32,9 +33,12 @@ const Index = () => (
           Effiziente Abrechnungslösungen für Ihre Immobilien.
         </h1>
         <span className="text-xl">Einfach. Schnell. Zuverlässig.</span>
-        <button className="bg-secondary  hover:bg-contrast hover:text-white mt-4 text-black py-2 px-4 rounded-md w-1/2 shadow-md">
+        <Link
+          to="/leistungen"
+          className="bg-secondary text-center  hover:bg-contrast hover:text-white mt-4 text-black py-2 px-4 rounded-md w-1/2 shadow-md"
+        >
           Zu unseren Leistungen
-        </button>
+        </Link>
       </div>
     </div>
 
@@ -70,14 +74,16 @@ const Index = () => (
           </div>
           <div className="text-center flex flex-col gap-8 lg:text-left lg:w-1/2 ">
             <div className="lg:pr-32 xl:pr-48">
-              <h3 className="text-4xl font-semibold leading-tight">Jahresabrechnungen</h3>
+              <h3 className="text-2xl lg:text-4xl font-semibold leading-tight">
+                Jahresabrechnungen
+              </h3>
               <p className="mt-8 text-l font-light leading-relaxed">
                 Sie möchten eine präzise und professionelle Jahresabrechnung für Ihre
                 Mehrfamilienhäuser erstellen? Als Immobilienbesitzer oder Hausverwaltung ist es
                 entscheidend, eine transparente und gut organisierte Abrechnung vorzulegen, um
                 sowohl Ihre eigenen Finanzen als auch die Ihrer Mieter zu verwalten.
               </p>
-              <ul className=" mt-2 list-disc space-y-4">
+              <ul className=" mt-2 list-none lg:list-disc space-y-4">
                 <li>
                   <strong className="font-bold">Transparenz und Überblick:</strong> Durch die
                   Bereitstellung detaillierter Jahresabrechnungen erhalten Verbraucher einen
@@ -105,12 +111,14 @@ const Index = () => (
       <div className="container mx-auto px-8 flex flex-col lg:flex-row items-center gap-10">
         <div className="text-center flex flex-col gap-8 lg:text-left lg:w-1/2">
           <div className="lg:pr-32 xl:pr-48">
-            <h3 className="text-4xl font-semibold leading-tight">Monatliche Verbrauchsnachweise</h3>
+            <h3 className="text-2xl lg:text-4xl font-semibold leading-tight">
+              Monatliche Verbrauchsnachweise
+            </h3>
             <p className="mt-8 text-l font-light leading-relaxed">
               Monatliche Energieverbrauchsnachweise bieten eine klare Übersicht über den
               Energieverbrauch von Haushalten und Unternehmen. Die Vorteile sind vielfältig:
             </p>
-            <ul className=" mt-2 list-disc space-y-4">
+            <ul className="mt-2 list-none lg:list-disc space-y-4">
               <li>
                 <strong className="font-bold">Transparenz und Bewusstsein:</strong> Durch
                 regelmäßige Berichte erhalten Verbraucher ein klares Bild ihres Energieverbrauchs,
@@ -190,7 +198,7 @@ const Index = () => (
       secondarySlot={<SvgCharts />}
     /> */}
 
-    <section id="stats" className="pb-20">
+    {/* <section id="stats" className="pb-20">
       <div className="container mx-auto text-center">
         <LabelText className="text-gray-600">Mit uns bekommen Sie</LabelText>
         <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
@@ -205,7 +213,7 @@ const Index = () => (
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
     {/* <section id="testimonials" className="py-20 lg:py-40">
       <div className="container mx-auto">
         <LabelText className="mb-8 text-gray-600 text-center">What customers are saying</LabelText>
