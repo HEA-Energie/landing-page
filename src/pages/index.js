@@ -232,7 +232,9 @@ const Index = () => (
         Dann lassen Sie uns einfach unverbindlich in Kontakt treten.
       </p>
       <p className="mt-8">
-        <Button size="xl">Kontakt aufnehmen</Button>
+        <Link to="/kontakt">
+          <Button size="xl">Kontakt aufnehmen</Button>
+        </Link>
       </p>
     </section>
   </Layout>

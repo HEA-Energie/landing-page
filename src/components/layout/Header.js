@@ -12,7 +12,7 @@ const Header = () => (
           <LogoIcon />
         </div> */}
         <span className="text-primary font-bold">HEA</span>
-        <span className="text-black">Energie</span>
+        <span className="text-black">Abrechnungen</span>
       </Link>
       <div className="flex mt-4 sm:mt-0">
         <Link to="/" className="px-4">
@@ -24,12 +24,14 @@ const Header = () => (
         <Link to="/technik" className="px-4">
           Technik
         </Link>
-        <AnchorLink className="px-4" href="#stats">
-          Kontakt & Services
-        </AnchorLink>
+        <Link to="/kontakt" className="px-4">
+          Kontakt
+        </Link>
       </div>
       <div className="hidden md:block">
-        <Button className="text-sm">Kontakt</Button>
+        <Button as={Link} to="/kontakt" className="text-sm">
+          Kontakt
+        </Button>
       </div>
     </div>
   </header>

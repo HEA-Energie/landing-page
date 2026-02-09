@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import WaveTop from '../../svg/WaveTop'
 
 const Footer = () => (
@@ -9,20 +10,20 @@ const Footer = () => (
         <div className="flex -mx-3  text-white">
           <div className="flex-1 px-3">
             <h2 className="text-lg font-semibold">Über Uns</h2>
-            <p className="mt-5">HEA Energie - Smart Abrechnen</p>
+            <p className="mt-5">HEA - Smart Abrechnen</p>
           </div>
           <div className="flex-1 px-3">
-            <h2 className="text-lg font-semibold">Important Links</h2>
+            <h2 className="text-lg font-semibold">Rechtliches</h2>
             <ul className="mt-4 leading-loose">
               <li>
-                <a className="text-white" href="https://codebushi.com">
-                  Terms &amp; Conditions
-                </a>
+                <Link to="/datenschutz" className="text-white">
+                  Datenschutz
+                </Link>
               </li>
               <li>
-                <a className="text-white" href="https://codebushi.com">
-                  Privacy Policy
-                </a>
+                <Link to="/impressum" className="text-white">
+                  Impressum
+                </Link>
               </li>
             </ul>
           </div>

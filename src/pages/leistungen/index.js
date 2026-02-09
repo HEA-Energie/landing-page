@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Button from '../../components/Button'
 import Layout from '../../components/layout/Layout'
 import WaveTop from '../../svg/WaveTop'
@@ -155,7 +156,9 @@ const Leistungen = () => (
         Dann lassen Sie uns einfach unverbindlich in Kontakt treten.
       </p>
       <p className="mt-8">
-        <Button size="xl">Kontakt aufnehmen</Button>
+        <Link to="/kontakt">
+          <Button size="xl">Kontakt aufnehmen</Button>
+        </Link>
       </p>
     </section>
   </Layout>
