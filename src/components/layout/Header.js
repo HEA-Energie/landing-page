@@ -29,9 +29,9 @@ const Header = () => (
         </Link>
       </div>
       <div className="hidden md:block">
-        <Button as={Link} to="/kontakt" className="text-sm">
-          Kontakt
-        </Button>
+        <Link to="/kontakt">
+          <Button className="text-sm">Kontakt</Button>
+        </Link>
       </div>
     </div>
   </header>
