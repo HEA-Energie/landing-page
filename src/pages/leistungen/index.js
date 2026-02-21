@@ -20,9 +20,12 @@ const Leistungen = () => (
           Wir finden die passende Lösung für Ihre Immobilie.
         </h1>
         <span className="text-xl">Jahresabrechnung. Verbauchsstatistiken. Montage.</span>
-        <button className="bg-secondary  hover:bg-contrast hover:text-white mt-4 text-black py-2 px-4 rounded-md w-1/2 shadow-md">
-          Zu unseren Leistungen
-        </button>
+        <Link
+          to="/technik"
+          className="bg-secondary text-center hover:bg-contrast hover:text-white mt-4 text-black py-2 px-4 rounded-md w-1/2 shadow-md"
+        >
+          Mehr zu unserer Messtechnik
+        </Link>
       </div>
     </div>
 

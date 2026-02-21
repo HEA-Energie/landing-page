@@ -12,7 +12,7 @@ import SvgCharts from '../svg/SvgCharts'
 import BubbleImage from '../svg/Bubble'
 import WaveTop from '../svg/WaveTop'
 import WaveBottom from '../svg/WaveBottom'
-import Logo from '../img/wind-mills.jpg'
+import Logo from '../img/landing_hea.png'
 import CardIcon from '../components/CardIcon'
 import { LuFileBarChart } from 'react-icons/lu'
 import Report from '../img/report-analysis.svg'
@@ -26,7 +26,7 @@ import { Link } from 'gatsby'
 const Index = () => (
   <Layout>
     <div className="relative">
-      <img src={Logo} alt="Logo" className="w-full h-[60vh] object-cover object-bottom" />
+      <img src={Logo} alt="Logo" className="w-full h-[60vh] object-cover object-center" />
       <div className="text-white absolute abs-center md:-translate-x-0 md:-translate-y-1/2 w-5/6 md:w-1/3 md:left-20 bg-opacity-95 bg-primary rounded-md shadow-2xl p-4 md:p-12 flex flex-col gap-8">
         <h1 className="text-xl lg:text-3xl xl:text-4xl font-bold max-w-xl">
           {' '}

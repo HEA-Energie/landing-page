@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 
 const sizes = {
   default: `py-3 px-8`,
   lg: `py-4 px-12`,
   xl: `py-5 px-16 text-lg`,
-};
+}
 
-const Button = ({ children, className = '', size }) => {
+const Button = ({ children, className = '', size, ...props }) => {
   return (
     <button
       type="button"
@@ -14,14 +14,17 @@ const Button = ({ children, className = '', size }) => {
         ${sizes[size] || sizes.default}
         ${className}
         bg-primary
-        hover:bg-primary-darker
+        hover:bg-[#1e7a9e]
+        transition-colors
+        duration-200
         rounded
         text-white
     `}
+      {...props}
     >
       {children}
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button
