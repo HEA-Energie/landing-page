@@ -38,8 +38,8 @@ const Leistungen = () => (
           Volle Transparenz, Übersichtlichkeit und Rechtskonformität bei Ihrer Verbrauchsabrechnung
           für Heiz- und Wasserkosten.
         </p>
-        <div className="flex justify-center mt-5">
-          <div className="w-1/2">
+        <div className="flex flex-col lg:flex-row justify-center items-center mt-5 gap-10">
+          <div className="w-full lg:w-1/2">
             <p className="mt-8 text-l font-light leading-relaxed">
               Sie möchten eine präzise und professionelle Jahresabrechnung für Ihre
               Mehrfamilienhäuser erstellen? Als Immobilienbesitzer oder Hausverwaltung ist es
@@ -65,7 +65,7 @@ const Leistungen = () => (
             </ul>
           </div>
           <div className="w-full lg:w-1/2 flex justify-center">
-            <img src={OnlineReport} alt="Logo" className="w-6/12" />
+            <img src={OnlineReport} alt="Logo" className="w-full lg:w-8/12" />
           </div>
         </div>
       </div>
@@ -81,8 +81,11 @@ const Leistungen = () => (
           <p className="text-xl lg:text-2xl font-light">
             Einsparungen durch Transparenz und Bewusstsein für den Energieverbrauch von Haushalten
           </p>
-          <div className="flex justify-center mt-5">
-            <div className="w-1/2">
+          <div className="flex flex-col-reverse lg:flex-row justify-center items-center mt-5 gap-10">
+            <div className="w-full lg:w-1/2 flex justify-center">
+              <img src={MonthlyReport} alt="Logo" className="w-full lg:w-8/12" />
+            </div>
+            <div className="w-full lg:w-1/2">
               <p className="mt-8 text-l font-light leading-relaxed">
                 Monatliche Energieverbrauchsnachweise bieten eine klare Übersicht über den
                 Energieverbrauch von Haushalten und Unternehmen. Die Vorteile sind vielfältig:
@@ -105,9 +108,6 @@ const Leistungen = () => (
                 </li>
               </ul>
             </div>
-            <div className="w-full lg:w-1/2 flex justify-center">
-              <img src={MonthlyReport} alt="Logo" className="w-6/12" />
-            </div>
           </div>
         </div>
       </div>
@@ -121,8 +121,8 @@ const Leistungen = () => (
           Professionelle Montage von Zählern und Geräten für präzise Abrechnungen und
           Verbrauchsnachweise
         </p>
-        <div className="flex justify-center mt-5">
-          <div className="w-1/2">
+        <div className="flex flex-col lg:flex-row justify-center items-center mt-5 gap-10">
+          <div className="w-full lg:w-1/2">
             <p className="mt-8 text-l font-light leading-relaxed">
               Wenn Sie wünschen, installiert und kalibriert unser erfahrenes Team von Technikern
               hochmoderne Zähler und Geräte, die eine präzise Erfassung Ihrer Energiedaten
@@ -147,7 +147,7 @@ const Leistungen = () => (
             </ul>
           </div>
           <div className="w-full lg:w-1/2 flex justify-center">
-            <img src={Montage} alt="Logo" className="w-6/12" />
+            <img src={Montage} alt="Logo" className="w-full lg:w-8/12" />
           </div>
         </div>
       </div>
