@@ -4,6 +4,9 @@ import Button from '../../components/Button'
 import Layout from '../../components/layout/Layout'
 import WaveTop from '../../svg/WaveTop'
 import WaveBottom from '../../svg/WaveBottom'
+import HeizMesser from '../../img/heiz_messer.png'
+import WasserMesser from '../../img/wasser_messer.png'
+import MengenMesser from '../../img/mengen_messer.png'
 
 const Technik = () => (
   <Layout>
@@ -61,11 +64,7 @@ const Technik = () => (
             </ul>
           </div>
           <div className="w-full lg:w-1/2 flex justify-center">
-            <img
-              src="https://images.unsplash.com/photo-1617861224282-930cb2342c43?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Heizkostenverteiler"
-              className="w-8/12 rounded-lg shadow-lg"
-            />
+            <img src={HeizMesser} alt="Heizkostenverteiler" className="w-3/4" />
           </div>
         </div>
       </div>
@@ -81,11 +80,7 @@ const Technik = () => (
           </p>
           <div className="flex flex-col-reverse lg:flex-row justify-center items-center mt-5 gap-10">
             <div className="w-full lg:w-1/2 flex justify-center">
-              <img
-                src="https://images.unsplash.com/photo-1584515933419-2b92b6ad300d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Wasserzähler"
-                className="w-8/12 rounded-lg shadow-lg"
-              />
+              <img src={WasserMesser} alt="Wasserzähler" className="w-3/4" />
             </div>
             <div className="w-full lg:w-1/2">
               <p className="mt-8 text-l font-light leading-relaxed">
@@ -147,11 +142,7 @@ const Technik = () => (
             </ul>
           </div>
           <div className="w-full lg:w-1/2 flex justify-center">
-            <img
-              src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Wärmemengenzähler"
-              className="w-8/12 rounded-lg shadow-lg"
-            />
+            <img src={MengenMesser} alt="Wärmemengenzähler" className="w-3/4" />
           </div>
         </div>
       </div>

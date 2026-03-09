@@ -24,9 +24,6 @@ const Header = () => (
         <Link to="/technik" className="px-4">
           Technik
         </Link>
-        <Link to="/kontakt" className="px-4">
-          Kontakt
-        </Link>
       </div>
       <div className="hidden md:block">
         <Link to="/kontakt">
