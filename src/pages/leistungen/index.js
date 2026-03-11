@@ -29,7 +29,7 @@ const Leistungen = () => (
       </div>
     </div>
 
-    <section className="pt-20 md:pt-40 lg:pb-2">
+    <section className="pt-20 md:pt-30 lg:pb-2">
       <div className="container mx-auto px-8 flex flex-col items-center gap-10">
         <h1 className="text-2xl lg:text-4xl font-bold leading-none text-primary">
           Jahresabrechnung

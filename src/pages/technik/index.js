@@ -7,6 +7,7 @@ import WaveBottom from '../../svg/WaveBottom'
 import HeizMesser from '../../img/heiz_messer.png'
 import WasserMesser from '../../img/wasser_messer.png'
 import MengenMesser from '../../img/mengen_messer.png'
+import Logo from '../../img/bg_technik.png'
 
 const Technik = () => (
   <Layout>
@@ -31,7 +32,7 @@ const Technik = () => (
       </div>
     </div>
 
-    <section className="pt-20 md:pt-40 lg:pb-2">
+    <section className="pt-20 md:pt-30 lg:pb-2">
       <div className="container mx-auto px-8 flex flex-col items-center gap-10">
         <h1 className="text-2xl lg:text-4xl font-bold leading-none text-primary">
           Heizkostenverteiler
@@ -73,7 +74,7 @@ const Technik = () => (
     <section>
       <WaveTop />
       <div className="bg-primary text-white">
-        <div className="container mx-auto px-8 flex flex-col items-center gap-10 py-20">
+        <div className="container mx-auto px-8 flex flex-col items-center gap-10 py-10">
           <h1 className="text-2xl lg:text-4xl font-bold leading-none">Wasserzähler</h1>
           <p className="text-xl lg:text-2xl font-light text-center">
             Moderne Wasserzähler für die exakte Erfassung des Warm- und Kaltwasserverbrauchs.
@@ -110,7 +111,7 @@ const Technik = () => (
       <WaveBottom />
     </section>
 
-    <section className="pt-20 md:pt-40 lg:pb-20">
+    <section className="pt-20 md:pt-20 lg:pb-20">
       <div className="container mx-auto px-8 flex flex-col items-center gap-10">
         <h1 className="text-2xl lg:text-4xl font-bold leading-none text-primary">
           Wärmemengenzähler
