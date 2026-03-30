@@ -1,14 +1,14 @@
-@tailwind base;
+@config "../../tailwind.config.js";
+@import "tailwindcss";
 
-@tailwind components;
+@layer base {
+  a {
+    @apply text-primary;
+  }
 
-@tailwind utilities;
-
-a {
-  @apply text-primary;
-}
-a:hover {
-  @apply text-secondary;
+  a:hover {
+    @apply text-secondary;
+  }
 }
 
 .abs-center-y {
@@ -18,18 +18,27 @@ a:hover {
   transform: translate(0%, -50%);
 }
 
-.abs-center-x {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-}
-
 .abs-center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1024px) {
+  .abs-center-x {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  .abs-center-y {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+  }
 }
 
 .gradient-primary-to-secondary {

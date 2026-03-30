@@ -7,7 +7,6 @@ import WaveBottom from '../../svg/WaveBottom'
 import HeizMesser from '../../img/heiz_messer.png'
 import WasserMesser from '../../img/wasser_messer.png'
 import MengenMesser from '../../img/mengen_messer.png'
-import Logo from '../../img/bg_technik.png'
 
 const Technik = () => (
   <Layout>
@@ -18,14 +17,14 @@ const Technik = () => (
         height: '60vh',
       }}
     >
-      <div className="text-white absolute abs-center md:-translate-x-0 md:-translate-y-1/2 w-5/6 md:w-1/3 md:left-20 bg-opacity-95 bg-primary rounded-md shadow-2xl p-4 md:p-12 flex flex-col gap-6">
+      <div className="flex flex-col gap-6 absolute abs-center abs-center-y md:m-10 p-4 md:p-12 w-5/6 md:w-1/3 bg-opacity-95 bg-primary rounded-md shadow-2xl text-white">
         <h1 className="text-xl lg:text-3xl xl:text-4xl font-bold max-w-xl">
           Moderne Messtechnik für präzise Abrechnungen.
         </h1>
         <span className="text-xl">Zuverlässig, genau und zukunftssicher.</span>
         <Link
           to="/leistungen"
-          className="bg-secondary text-center hover:bg-contrast hover:text-white mt-4 text-black py-2 px-4 rounded-md lg:w-1/2 shadow-md"
+          className="bg-secondary text-center hover:bg-contrast hover:text-white mt-4 text-black py-2 px-4 rounded-md shadow-md w-full max-w-[400px]"
         >
           Zu unseren Leistungen
         </Link>

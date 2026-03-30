@@ -12,7 +12,7 @@ const Header = () => (
           <LogoIcon />
         </div> */}
         <span className="text-primary font-bold">HEA</span>
-        <span className="text-black">Abrechnung</span>
+        <span className="text-black">Digital</span>
       </Link>
       <div className="flex mt-4 sm:mt-0">
         <Link to="/" className="px-4">

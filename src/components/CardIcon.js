@@ -1,6 +1,4 @@
 import React from 'react'
-import { IconType } from 'react-icons'
-import { LuFileBarChart } from 'react-icons/lu'
 
 const CardIcon = ({ icon }) => (
   <div className="flex p-4 self-center rounded-full bg-primary">
