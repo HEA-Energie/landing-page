@@ -15,6 +15,7 @@ const Button = ({ children, className = '', size, ...props }) => {
         ${className}
         bg-primary
         hover:bg-[#1e7a9e]
+        hover:cursor-pointer
         transition-colors
         duration-200
         rounded
