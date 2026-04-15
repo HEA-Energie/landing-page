@@ -29,9 +29,29 @@ const Datenschutz = () => (
 
         <h2 className="text-2xl font-bold mt-8 mb-4">2. Datenerfassung auf unserer Website</h2>
         <p>
-          Diese Website ist eine reine Landingpage und verarbeitet keine personenbezogenen Daten. Es
-          werden keine Kontaktformulare, Newsletter-Anmeldungen oder andere Funktionen verwendet,
-          die eine Eingabe von personenbezogenen Daten erfordern.
+          Auf dieser Website werden personenbezogene Daten nur dann verarbeitet, wenn Sie unser
+          Kontaktformular nutzen. In allen anderen Fällen erfolgt keine Verarbeitung von
+          personenbezogenen Daten.
+        </p>
+
+        <h3 className="text-xl font-bold mt-6 mb-3">Kontaktformular</h3>
+        <p>
+          Wenn Sie unsere Kontaktformular ausfüllen und absenden, erheben wir folgende Daten:
+        </p>
+        <ul>
+          <li>Name</li>
+          <li>E-Mail-Adresse</li>
+          <li>Nachrichteninhalt</li>
+        </ul>
+        <p>
+          Diese Daten werden für die Bearbeitung und Beantwortung Ihrer Anfrage verwendet. Die
+          Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Die
+          Daten werden jediglich zum Bearbeiten Ihrer Anfrage benutzt und werden nicht weitergegeben oder für andere Zwecke verwendet.
+        </p>
+        <p>
+          Nach Beantwortung Ihrer Anfrage werden Ihre Daten auf Anfrage wieder gelöscht. Sie können
+          Ihre Einwilligung zur Datenverarbeitung jederzeit widerrufen, indem Sie uns eine E-Mail
+          schreiben.
         </p>
 
         <h3 className="text-xl font-bold mt-6 mb-3">Server-Log-Dateien</h3>
