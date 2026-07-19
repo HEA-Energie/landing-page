@@ -8,18 +8,18 @@ const Impressum = () => (
       <div className="prose lg:prose-xl">
         <h2 className="text-2xl font-bold mt-8 mb-4">Angaben gemäß § 5 TMG</h2>
         <p>
-          [Ihr Name/Firmenname]
+          HEA GmbH
           <br />
-          [Ihre Straße und Hausnummer]
+          Hauptstraße 4
           <br />
-          [Ihre PLZ und Stadt]
+          74677 Dörzbach
         </p>
 
         <h2 className="text-2xl font-bold mt-8 mb-4">Kontakt</h2>
         <p>
-          Telefon: [Ihre Telefonnummer]
+          Telefon: 07935 123456
           <br />
-          E-Mail: [Ihre E-Mail-Adresse]
+          E-Mail: info@hea-digital.de
         </p>
 
         <h2 className="text-2xl font-bold mt-8 mb-4">Umsatzsteuer-ID</h2>

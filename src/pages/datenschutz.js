@@ -16,13 +16,13 @@ const Datenschutz = () => (
         <p>
           Verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
           <br />
-          [Ihr Name/Firmenname]
+          HEA GmbH
           <br />
-          [Ihre Straße und Hausnummer]
+          Hauptstraße 4
           <br />
-          [Ihre PLZ und Stadt]
+          74677 Dörzbach
           <br />
-          [Ihre E-Mail-Adresse]
+          info@hea-digital.de
           <br />
           [Ihre Telefonnummer]
         </p>
